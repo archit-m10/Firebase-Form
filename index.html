@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+</head>
+<body>
+    <div class="row">
+        <div class="container">
+            <h2>Add new property</h2>
+            <div class="alert alert-success success-message" style="display:none;">Properties updated successfully.</div>
+            <form id="dojoForm">
+                <div class="form-group">
+                    <label for="a">search address(property_searchadd)</label>
+                    <input type="text" class="form-control property_searchadd" id="a">
+                </div>
+                <div class="form-group">
+                    <label for="b">3 months membership fees(property_3_months_membership)</label>
+                    <input type="number" class="form-control property_3_months_membership" id="b">
+                </div>
+                <div class="form-group">
+                    <label for="c">6 months membership fees(property_6_months_membership)</label>
+                    <input type="number" class="form-control property_6_months_membership" id="c">
+                </div>
+                <div class="form-group">
+                    <label for="d">Address(property_add)</label>
+                    <input type="text" class="form-control property_add" id="d">
+                </div>
+                <div class="form-group">
+                    <label for="e">batch 1(property_batch1)</label>
+            
+                       <select id="e" class="form-control property_batch1" >
+                <option value="Monday">Monday</option>
+               <option value="Tuesday">Tuesday</option>
+               <option value="Wednesday">Wednesday</option>
+               <option value="Thursday">Thursday</option>
+               <option value="Friday">Friday</option>
+               <option value="Saturday">Saturday</option>
+               <option value="Sunday">Sunday</option>
+               </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="f">batch 1 timing(property_batch1_timing)</label>
+                    <input type="time" class="form-control property_batch1_timing" id="f">
+                   
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="g">batch 2(property_batch2)</label>
+                   
+                    <select id="g" class="form-control property_batch2" >
+                        <option value="Monday">Monday</option>
+                       <option value="Tuesday">Tuesday</option>
+                       <option value="Wednesday">Wednesday</option>
+                       <option value="Thursday">Thursday</option>
+                       <option value="Friday">Friday</option>
+                       <option value="Saturday">Saturday</option>
+                       <option value="Sunday">Sunday</option>
+                       </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="h">batch 2 timing(property_batch2_timing)</label>
+                    <input type="time"  class="form-control property_batch2_timing" id="h" >
+                 
+                </div>
+
+                <div class="form-group">
+                    <label for="i">Head instructor details(property_head_instructor_details)</label>
+                    <input type="text" class="form-control property_head_instructor_details" id="i">
+                </div>
+
+                <div class="form-group">
+                    <label for="j">Image(property_img)</label>
+                    <input type="url" class="form-control property_img" id="j" >
+                </div>
+
+                <div class="form-group">
+                    <label for="k">Image2(property_img2)</label>
+                    <input type="url" class="form-control property_img2" id="k">
+                </div>
+
+                <div class="form-group">
+                    <label for="l">Image3(property_img3)</label>
+                    <input type="url" class="form-control property_img3" id="l">
+                </div>
+
+                <div class="form-group">
+                    <label for="m">Image4(property_img4)</label>
+                    <input type="url" class="form-control property_img4" id="m"  >
+                </div>
+                
+                <div class="form-group">
+                    <label for="n">Instructor contact number(property_instuctor_contact)</label>
+                    <input type="tel" class="form-control property_instuctor_contact" id="n"    pattern="[0-9]{10}" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="o">Instructor details(property_instuctor_details)</label>
+                    <input type="text" class="form-control property_instuctor_details" id="o">
+                </div>
+                
+                <div class="form-group">
+                    <label for="p">Instructor name(property_instuctor_name)</label>
+                    <input type="text" class="form-control property_instuctor_name" id="p">
+                </div>
+                
+                <div class="form-group">
+                    <label for="q">Updator details(property_last_update)</label>
+                    <input type="text" class="form-control property_last_update" id="q" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="zz">class location(property_location)</label>
+                    <input type="text" class="form-control property_location" id="zz" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="r">map address(property_map_location)</label>
+                    <input type="url" class="form-control property_map_location" id="r" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="s">Monthly membership fee(property_monthly_membership)</label>
+                    <input type="number" class="form-control property_monthly_membership" id="s" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="t">Class name(property_name)</label>
+                    <input type="text" class="form-control property_name" id="t" >
+                </div>
+                <div class="form-group">
+                    <label for="u">Popularity(property_popularity)</label>
+                    <input type="number" class="form-control property_popularity" id="u" >
+                </div>
+                <div class="form-group">
+                    <label for="v">Price(property_price)</label>
+                    <input type="number" class="form-control property_price" id="v">
+                </div>
+                <div class="form-group">
+                    <label for="w">Pricing(property_pricing)</label>
+                    <input type="number" class="form-control property_pricing" id="w">
+                </div>
+                <div class="form-group">
+                    <label for="x">Rating(property_rating)</label>
+                    <input type="number" class="form-control property_rating" id="x" >
+                    
+                </div>
+                <div class="form-group">
+                    <label for="y">Rating remark(property_rating_remark)</label>
+                    <input type="text" class="form-control property_rating_remark" id="y" >
+                </div>
+                <div class="form-group">
+                    <label for="z">RatingInt(property_ratingInt)</label>
+                 
+                    <select id="z" class="form-control property_ratingInt" >
+                        <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                       <option value="7">7</option>
+                       <option value="8">8</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                       </select>
+                </div>
+                <div class="form-group">
+                    <label for="aa">Region(property_region)</label>
+                    <input type="text" class="form-control property_region" id="aa">
+                </div>
+                <div class="form-group">
+                    <label for="bb">Registration fee(property_registration_fee)</label>
+                    <input type="number" class="form-control property_registration_fee" id="bb" >
+                </div>
+                <div class="form-group">
+                    <label for="cc">DOJO serial number and name(property_searchDOJO)</label>
+                    <input type="text" class="form-control property_searchDOJO" id="cc">
+                </div>
+                <div class="form-group">
+                    <label for="dd">name for search(property_searchName)</label>
+                    <input type="text" class="form-control property_searchName" id="dd" >
+                </div>
+                <div class="form-group">
+                    <label for="ee">number for search(property_searchNO)</label>
+                    <input type="number" class="form-control property_searchNO" id="ee">
+                </div>
+                <div class="form-group">
+                    <label for="ff">short address of class(property_shortadd)</label>
+                    <input type="text" class="form-control property_shortadd" id="ff">
+                </div>
+                <div class="form-group">
+                    <label for="gg">type of class 1(property_type)</label>
+                    <input type="text" class="form-control property_type" id="gg" >
+                </div>
+                <div class="form-group">
+                    <label for="hh">type of class 2(property_type2)</label>
+                    <input type="text" class="form-control property_type2" id="hh" >
+                </div>
+                <div class="form-group">
+                    <label for="ii">type of class 3(property_type3)</label>
+                    <input type="text" class="form-control property_type3" id="ii" >
+                </div>
+                <div class="form-group">
+                    <label for="jj">Yearly membership fee(property_yearly_membership)</label>
+                    <input type="number
+                    " class="form-control property_yearly_membership" id="jj" >
+                </div>
+
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

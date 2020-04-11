@@ -1,0 +1,19 @@
+body{
+    background-color:rgb(234,0,0);
+    font-size: large;
+    font-weight: 500;
+     color: white;
+}
+h2{
+    font-weight: 800;
+    color: black;
+    font-style: italic;
+}
+
+
+ .btn-primary{
+     background-color:black;
+     font-weight: 600;
+
+
+}
